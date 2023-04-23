@@ -39,3 +39,8 @@ jobs:
         shell: bash
         env:
           SSH_KEY: ${{secrets.test}}
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: key
