@@ -39,7 +39,7 @@ jobs:
       - run: 'echo "$SSH_KEY" > key'
         shell: bash
         env:
-          SSH_KEY: ${{env.test}}
+          SSH_KEY: ${{env.test1}}
 
       - uses: actions/upload-artifact@v3
         with:
